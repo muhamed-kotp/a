@@ -1,0 +1,129 @@
+
+.nav-title{
+    color: rgb(255, 0, 68) !important;
+    font-family: 'Oswald', sans-serif !important;
+    letter-spacing: 6px !important;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.world-wide{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 247, 248);
+    color: rgb(0, 0, 0);
+    letter-spacing: 4px;
+    font-family: "Oswald", sans-serif;
+}
+
+.primary-nav{
+    background-color: rgb(185, 185, 185);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: rgb(224, 219, 219) solid 1px;
+}
+.collapse .nav-link {
+    font-family: "Great Vibes", cursive;
+    font-family: "Oswald", sans-serif;
+    font-family: "Playfair Display", serif;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0 !important;
+    font-size: 20px !important;
+
+  }
+  .collapse .nav-link::before {
+    content: "";
+    position: absolute;
+    transform: scaleX(0);
+    height: 2px;
+    background-color:rgb(255, 0, 68);
+    width: 100%;
+    left: 0;
+    bottom: -4px;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+
+  }
+
+  .collapse .nav-link:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .default-btn{
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 68);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #f9e506;
+    transition: ease-out 0.3s;
+    outline: none;
+    width: 200px;
+    letter-spacing: 2px;
+  }
+
+
+  .default-btn:hover{
+    box-shadow: inset 200px 0 0 0 #f9e506;
+    color: #000000;
+  }
+
+
+  .back_btn{
+      font-family: 'Alfa Slab One', serif !important;
+      border: none;
+      color: rgb(0, 0, 0);
+      background-color: rgb(226, 226, 226);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #888888;
+    transition: ease-out 0.3s;
+    outline: none;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: 700;
+}
+.back_btn:hover{
+    box-shadow: inset 150px 0 0 0 #888888;
+    color: #ffffff;
+}
+.prod-col-cont{
+        padding: 0;
+        width: 30%;
+        overflow: hidden;
+        height: 500px;
+}
+.prod-img{
+    transition: transform 3s ease-in-out;
+    height:100% !important ;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.prod-img:hover{
+    transform: scale(1.2);
+  }
+  .prod-name{
+    font-family: 'Alfa Slab One', serif;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .prod-price{
+    margin-left: 20px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  .prod-col-cont:hover .prod-price{
+   opacity: 1;
+  }
+  @media screen and (max-width: 1200px) {
+    .prod-col-cont{
+      width: 45%;
+    }
+  }
